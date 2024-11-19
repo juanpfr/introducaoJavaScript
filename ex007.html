@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 7</title>
+</head>
+
+<body>
+
+    <script>
+        let conta = prompt("Digite o valor da conta")
+
+        let porcentagem = prompt("Digite a porcentagem de gorjeta desejada")
+
+        let gorjeta = (Number(conta) * Number(porcentagem)) / 100
+
+        let final = Number(conta) + gorjeta
+
+        alert(`O valor da gorjeta é de R$${gorjeta.toFixed(2)}. O total a pagar é R$${final.toFixed(2)}.`)
+    </script>
+</body>
+
+</html>
