@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 01</title>
+</head>
+
+<body>
+
+    <script>
+
+        let n1 = prompt("Digite o primeiro número:");
+
+        let n2 = prompt("Digite o segundo número:");
+
+        let n3 = prompt("Digite o terceiro número:");
+
+        if (n1 > 0 && n2 > 0 && n3 > 0) {
+            alert("Todos os números são positivos!");
+        } else if (n1 < 0 && n2 > 0 && n3 > 0) {
+            alert("Apenas o primeiro número é negativo ou zero!");
+        } else if (n1 > 0 && n2 < 0 && n3 > 0) {
+            alert("Apenas o segundo número é negativo ou zero!");
+        } else if (n1 > 0 && n2 > 0 && n3 < 0) {
+            alert("Apenas o terceiro número é negativo ou zero!");
+        } else if (n1 > 0 && n2 < 0 && n3 < 0) {
+            alert("Apenas o primeiro número é positivo!");
+        } else if (n1 < 0 && n2 > 0 && n3 < 0) {
+            alert("Apenas o segundo número é positivo!");
+        } else if(n1 < 0 && n2 < 0 && n3 > 0) {
+            alert("Apenas o terceiro número é positivo!");
+        } else{
+            alert("Todos os números são negativos!");
+        }
+
+    </script>
+</body>
+
+</html>

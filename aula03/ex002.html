@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 02</title>
+</head>
+
+<body>
+
+    <script>
+
+        let n1 = prompt("Digite o primeiro número:");
+
+        let n2 = prompt("Digite o segundo número:");
+
+        let conta = prompt("Agora escolha e digite umas das operações matemáticas\n(Escreva como está aqui)\nsoma, subtração, multiplicação ou divisão.");
+
+        n1 = Number(n1)
+        n2 = Number(n2)
+
+        if(conta == "soma"){
+            let final = n1 + n2
+            alert(`O resultado da soma de ${n1} e ${n2} é: ${final}`)
+        } else if(conta == "subtração"){
+            let final = n1 - n2
+            alert(`O resultado da subtração de ${n1} e ${n2} é: ${final}`)
+        } else if(conta == "multiplicação"){
+            let final = n1 * n2
+            alert(`O resultado da multiplicação de ${n1} e ${n2} é: ${final}`)
+        } else if(conta == "divisão"){
+            let final = n1 / n2
+            alert(`O resultado da divisão de ${n1} e ${n2} é: ${final}`)
+        }
+    </script>
+</body>
+
+</html>
