@@ -3,7 +3,7 @@
 // Para usar o prompt no node, vc precisa dar o comando "npm install prompt-sync" no terminal
 // Depois tem que chamar usando var prompt = require("prompt-sync")()
 
-let prompt = require("prompt-sync")()
+const prompt = require("prompt-sync")()
 
 let nome = prompt("Qual seu nome?")
 
