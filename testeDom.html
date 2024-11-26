@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        body{
+            background-color: black;
+            color: white;
+        }
+    </style>
+</head>
+<body id="corpo">
+    <h1 id="titulo">Olá, Mundo!</h1>
+
+    <script>
+        nome = prompt("Qual seu nome?")
+        document.getElementById("titulo").innerText = "Bem vindo " + nome + "!";
+
+        document.getElementById("corpo").innerHTML += "<h2> Eu sou um h2 inserido pelo javaScript </h2>"
+    </script>
+</body>
+</html>
