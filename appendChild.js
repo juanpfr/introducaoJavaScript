@@ -11,3 +11,5 @@ lista.appendChild(novoItem); //colocou o filho novoItem dentro do lista
 const sim = document.createElement("li");
 sim.Innertext = "Item 4";
 lista.appendChild(sim);
+
+lista.removeChild(sim);
