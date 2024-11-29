@@ -1,6 +1,10 @@
 const prompt = require("prompt-sync")()
 
-let turno = Number(prompt("Escolha: \n1 - Manhã\n2 - Tarde\n3 - Noite"))
+console.log("1 - Manhã");
+console.log("2 - Tarde");
+console.log("3 - Noite");
+
+let turno = Number(prompt("Escolha uma das opções acima: "))
 
 switch(turno){
     case 1:
@@ -18,7 +22,14 @@ switch(turno){
 
 let nome = prompt("Qual seu nome?")
 
-let escolha = Number(prompt(`${turno} ${nome}!\nEscolha uma das opções de bebida abaixo:\n1 - Água\n2 - Suco de manga\n3 - Coca-Cola\n4 - Café`))
+console.log(`${turno} ${nome}!`)
+
+console.log("1 - Água");
+console.log("2 - Suco de manga");
+console.log("3 - Coca-Cola");
+console.log("4 - Café");
+
+let escolha = Number(prompt("Escolha uma das opções de bebida acima: "));
 
 switch(escolha){
     case 1:
