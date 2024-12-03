@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tema</title>
+
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        
+        header{
+            display: flex;
+            justify-content: space-evenly;
+            background-color: rgb(66, 198, 250);
+        }
+
+        button{
+            background-color: white;
+            font-size: 1em;
+            cursor: pointer;
+            margin: 50px 0;
+            width: 15%;
+            height: 30px;
+        }
+
+        button:hover{
+            background-color: navy;
+            color: white;
+            border-color: white;
+        }
+        main{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 600px;
+        }
+
+        #claro{
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <button onclick="alternaClaro()" id="escuro">Escuro</button>
+        <button onclick="alternaEscuro()" id="claro">Claro</button>
+    </header>
+    <main>
+        <h1>Mudança de temas</h1>
+    </main>
+    <script>
+        function alternaClaro(){
+            document.getElementById("escuro").style.display = "none"
+            document.getElementById("claro").style.display = "block"
+            document.querySelector("button").innerText = "Claro"
+            document.querySelector("main").style.backgroundColor = "black"
+            document.querySelector("main").style.color = "white"
+            document.querySelector("body").style.backgroundColor = "black"
+        }
+        function alternaEscuro(){
+                document.getElementById("claro").style.display = "none"
+                document.getElementById("escuro").style.display = "block"
+                document.querySelector("button").innerText = "Escuro"
+                document.querySelector("main").style.backgroundColor = "white"
+                document.querySelector("main").style.color = "black"
+                document.querySelector("body").style.backgroundColor = "white"
+        }
+    </script>
+</body>
+</html>
