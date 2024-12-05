@@ -1,0 +1,5 @@
+let frase = "Aprender JavaScript é divertido!";
+console.log(frase.length);
+
+let texto = "JavaScript é incrível";
+console.log(texto.toUpperCase());
